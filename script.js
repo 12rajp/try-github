@@ -39,3 +39,26 @@ async function checkWeather(city){
         }
     
     }
+    searchBtn.addEventListener("click",()=>{
+        checkWeather(searchBox.value);
+    })
+    searchBtn.addEventListener("click",()=>{
+        checkWeather(searchBox.value);
+    })
+    const zipCodeInput = document.getElementById('zip-code-input');
+    const submitButton = document.getElementById('submit-button');
+    
+    submitButton.addEventListener('click', () => {
+      const zipCode = zipCodeInput.value;
+      const apiUrl = `https://api.zippopotam.us/us/${zipCode}`;
+      fetch(apiUrl)
+        .then(response => response.json())
+        .then(data => {
+          const { places } = data;
+          console.log(places);
+        })
+        .catch(error => {
+          console.error(error);
+        });
+    });
+    
