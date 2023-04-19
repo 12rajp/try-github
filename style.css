@@ -6,10 +6,11 @@
     }
     body{
         background: #222;
+        margin-top: -5rem;
     }
     .card{
         width: 90%;
-        max-width: 470px;
+        max-width: 440px;
         background: linear-gradient(135deg, #00feba, #5b548a);
         color: #fff;
         margin: 100px auto 0;
@@ -58,7 +59,6 @@
     .city{
         font-size: 40px;
         font-weight: 400;
-        /* margin-top: 5px; */
     }
     .details{
         display: flex;
@@ -78,7 +78,6 @@
     }
     .humidity, .wind{
        font-size: 28px;
-       /* margin-top: -6px; */
     }
     .error{
         text-align: center;
@@ -86,3 +85,9 @@
         margin-top: 15px;
         display: none;
     }
+    .error img{
+        width: 100%;
+        margin-top: 28px;
+        border-radius: 14px;
+    }
+  
